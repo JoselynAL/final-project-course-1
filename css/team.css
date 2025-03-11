@@ -1,0 +1,141 @@
+/* TEAM PAGE */
+/* Nav */
+.team-page nav {
+    /* background-color: var(--primary-color);
+     */
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    z-index: 1000;
+    top: 0px
+}
+
+/* Profile */
+#profile {
+    text-align: center;
+    padding: 120px 20px 50px;
+    background-color: white;
+    max-width: 800px;
+    margin: 100px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary-color);
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+}
+
+#profile h1 {
+    font-size: 35px;
+    color: var(--primary-color);
+    margin-top: 15px;
+}
+
+#profile h2 {
+    font-size: 22px;
+    color: #555;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 29px;
+}
+
+.main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main ul li {
+    font-size: 18px;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Biography and education */
+.biography ul {
+    padding-left: 20px;
+}
+
+.biography ul li {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Practice areas*/
+.areas-practice ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.areas-practice ul li {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* professional affiliations */
+.affiliations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.affiliations li {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+/* Sección de contacto */
+.contact ul {
+    text-align: center;
+}
+
+.contact ul li {
+    margin: 10px 0;
+}
+
+.contact ul li a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
+    text-decoration: underline;
+}

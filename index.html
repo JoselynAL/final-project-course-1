@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-    <header class="home">
+    <header class="home" style="background-color: white;">
+        <img src="./assets/images/logo-home.png" class="logo-img">
         <nav class="nav">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="../final-project-course-1/Pages/Team.html">Team</a></li>
                 <li><a href="../final-project-course-1/Pages/Areas.html">Areas</a></li>
-                <li><a href="#">EN</a></li>
-                <li><a href="#">ES</a></li>
+                <div class="phone-num">
+                    <img src="./assets/images/phone.png" class="phone-img">
+                    <li class="number"><a href="#">672 399 2397</a></li>
+                </div>
+                
+                <!-- <li><a href="#">ES</a></li> -->
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="home-main">
-            <p>We specialize in regulatory compliance with a focus on Digital Law, Data Protection, and Telecommunications, ensuring legal excellence and strategic solutions for our clients</p>
-        </section>
+        <div class="home-main">
+            <!-- <p>We specialize in regulatory compliance with a focus on Digital Law, Data Protection,  -->
+                <!-- and Telecommunications, ensuring legal excellence and strategic solutions for our clients</p> -->
+            <h2 class="main-heading">Reliable<br>& Excellence</h2>
+        </div>
    
-
         <!-- Law areas section -->
-        <section class="law-areas-home-page">
+        <!-- <div class="law-areas-home-page">
             <h2 class="h2">Law Areas</h2>
             <ul>
                 <li>Data Protection and Privacy</li>
@@ -35,41 +40,51 @@
                 <li>E-commerce and FinTech regulation</li>
                 <li>Telecommunications Regulation</li>
             </ul>
-        </section>
+        </div> -->
+
+        <div class="image-carousel">
+            <div class="carousel-track">
+                <img src="./assets/images/Chambers.jpg" alt="Imagen 1">
+                <img src="./assets/images/Legal500.jpg" alt="Imagen 2">
+                <img src="./assets/images/Best-Law-Firms-Standard-Badge.webp" alt="Imagen 3">
+                <img src="./assets/images/legal-award.webp" alt="Imagen 4">
+            </div>
+        </div>
+        
 
         <!-- Awards section -->
-        <section class="awards-home-page">
-            <h2>Awards</h2>
+        <!-- <div class="awards-home-page">
+            <h2 class="h2">Awards</h2>
             <div class="awards">
                 <img src="../final-project-course-1/assets/images/Chambers.jpg" alt="Chambers and Partners 2024">
                 <img src="../final-project-course-1/assets/images/Legal500.jpg" alt="The Legal 500 2022">
             </div>
-        </section>
+        </div> -->
 
         <!-- Profesional section -->
-        <section class="affiliations-home-page">
+        <!-- <div class="affiliations-home-page">
             <h2 class="h2">Professional Affiliations</h2>
             <ul>
                 <li>Member of Foro de Abogados del Ecuador</li>
             </ul>
-        </section>
+        </div> -->
 
         <!-- Contact section -->
-        <section class="contact-home-page">
-            <h3>Contact with us</h3>
+        <div class="contact-home-page">
+            <h3 class="h3-contact">Contact with us</h3>
             <form action="#" method="post">
-                <label for="name">Name:</label>
+                <label for="name">NAME (REQUIRED)</label>
                 <input type="text" id="name" name="name" required>
                 
-                <label for="email">Email Address:</label>
+                <label for="email">EMAIL (REQUIRED)</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="mensaje">Menssage:</label>
-                <textarea id="menssage" name="menssage" rows="5" required></textarea>
+                <label for="message">MESSAGE</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
                 
-                <button type="submit">Send</button>
+                <button class="btn-home" type="submit">Submit</button>
             </form>
-        </section>
+        </div>
     </main>
 
     <footer>
