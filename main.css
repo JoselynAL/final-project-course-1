@@ -599,13 +599,37 @@ input[type="checkbox"]:checked +label + .info {
     }
 
     .contact-home-page {
-        margin: 20px; /* Reducir el margen en móviles */
+        margin: 20px; 
         padding: 20px;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px; /* Reducir el espacio entre enlaces */
+        gap: 10px; 
+    }
+
+    .law-areas-page {
+        padding: 1rem;
+    }
+    
+    .law-areas-page h2 {
+        font-size: 1.5rem;
+    }
+    
+    .law-areas-page ul {
+        padding: 0;
+    }
+    
+    .law-areas-page li {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .law-areas-page li img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -616,13 +640,34 @@ input[type="checkbox"]:checked +label + .info {
     }
 
     .home {
-        flex-direction: column; /* Asegurar que los elementos se apilen */
+        flex-direction: column; 
         padding: 20px;
     }
 
     .law-areas.law-home {
         flex-direction: column;
         gap: 30px;
+    }
+
+    .law-areas-page {
+        padding: 2rem;
+    }
+    
+    .law-areas-page h2 {
+        font-size: 2rem;
+    }
+    
+    .law-areas-page li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5rem;
+    }
+    
+    .law-areas-page li img {
+        width: 150px;
+        height: auto;
+        margin-right: 1rem;
     }
 }
 
@@ -635,5 +680,19 @@ input[type="checkbox"]:checked +label + .info {
     .law-firm-about {
         max-width: 80%;
         margin: auto;
+    }
+
+    .law-areas-page {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 3rem;
+    }
+    
+    .law-areas-page h2 {
+        font-size: 2.5rem;
+    }
+    
+    .law-areas-page li {
+        padding: 2rem;
     }
 }
