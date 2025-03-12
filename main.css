@@ -484,6 +484,7 @@ input[type="checkbox"]:checked +label + .info {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-left: -400px;
 }
 
 .affiliations div {
