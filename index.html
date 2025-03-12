@@ -6,6 +6,11 @@
     <title>Arias&Lopez Law Firm</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 <body>
     <header class="home" style="background-color: white;">
         <img src="./assets/images/logo-home.png" class="logo-img">
@@ -80,16 +85,25 @@
         <div class="contact-home-page">
             <h3 class="h3-contact">Contact us</h3>
             <form action="#" method="post">
-                <label class="label-c" for="name">NAME (REQUIRED)</label>
-                <input type="text" id="name" name="name" required>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="label-c" for="name">NAME (REQUIRED)</label>
+                    <input type="text" id="name" name="name" required
+                    minlength="2" maxlength="50" 
+                    pattern="[A-Za-z\s]+" 
+                    title="Only letters are allowed"
+                    autocomplete="name">
                 
-                <label class="label-c" for="email">EMAIL (REQUIRED)</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label class="label-c" for="message">MESSAGE</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button class="btn-home" type="submit">Submit</button>
+                    <label class="label-c" for="email">EMAIL (REQUIRED)</label>
+                    <input type="email" id="email" name="email" 
+                    required autocomplete="email">
+                    
+                    <label class="label-c" for="message">MESSAGE</label>
+                    <textarea id="message" name="message" rows="5" 
+                    required placeholder="Write your message here..."></textarea>
+                    
+                    <button class="btn-home" type="submit">Submit</button>
+            </fieldset>
             </form>
         </div>
     </main>
@@ -97,5 +111,9 @@
     <footer>
         <p>&copy; 2024 Arias&Lopez Law Firm. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
