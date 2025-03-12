@@ -21,14 +21,30 @@
 
     <main class="main">
         <!-- Profile section -->
-        <section id="profile">
-            <img src="../assets/images/Profile picture1.jpg" alt="Joselyn" class="profile-pic">
-            <h1>Joselyn Arias López</h1>
-            <h2>Lawyer specializing in Digital Law, Telecommunications and Data Protection</h2>
-        </section>
+        <div id="profile">
+            <img src="../assets/images/Profile picture1.jpg" 
+            alt="Joselyn" class="profile-pic">
+            <h2 class="h2-profile">Joselyn Arias López</h2>
+            <p class="p-profile">Lawyer specializing in Digital Law,<br> Telecommunications
+            and Data Protection</p>
+            <div class="joselyn-contact">
+                <div class="left">
+                    <ul>
+                        <li><strong>Phone number:</strong> +1 672 399 2397</li>
+                        <li><strong>Email:</strong> joselynyajaira2397@outlook.com</li>
+                    </ul>
+                </div>
+                <div  class="right">
+                    <ul>
+                        <li><strong>Address:</strong> Vancouver, Canadá</li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/feed/">https://www.linkedin.com/feed/</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- Biography and Education section -->
-        <section class="biography">
+        <div class="biography">
             <h2>Biography</h2>
             <h3>Education</h3>
             <ul>
@@ -40,31 +56,55 @@
                 <li>Legal Assistant, HEKA LAW FIRM, 2022</li>
                 <li>Lawyer junior, HEKA LAW FIRM, 2022-2024</li>
             </ul>
-        </section>
+        </div>
 
         <!-- Law areas section -->
-        <section class="areas-practice">
+        <div class="practice-area">
             <h2>Practice Area</h2>
-            <ul>
-                <li>Data Protection and Privacy</li>
-                <li>Digital Compliance Consulting</li>
-                <li>E-commerce and FinTech regulation</li>
-                <li>Telecommunications Regulation</li>
-            </ul>
-        </section>
+            <div class="practices-labels">
+                <div class="area">
+                    <input type="checkbox" id="area1">
+                    <label for="area1">Data Protection and Privacy</label>
+                    <p class="info">We specialize in data protection laws and ensure<br>
+                        compliance with privacy regulations.</p>
+                </div>
+                <div class="area">
+                    <input type="checkbox" id="area2">
+                    <label for="area2">Digital Compliance Consulting</label>
+                    <p class="info">Our team advises businesses on regulatory <br>
+                        compliance in the digital space.</p>
+                </div>
+                <div class="area">
+                    <input type="checkbox" id="area3">
+                    <label for="area3">E-commerce and FinTech regulation</label>
+                    <p class="info">Helping fintech companies navigate legal<br>
+                        frameworks and e-commerce regulations.</p>
+                </div>
+                <div class="area">
+                    <input type="checkbox" id="area4">
+                    <label for="area4">Telecommunications Regulation</label>
+                    <p class="info">Ensuring compliance with telecom laws and<br>
+                        regulations.</p>
+                </div>
+            </div>        
+        </div>
 
         <!-- Profetional section -->
-        <section class="affiliations">
+        <div class="affiliations">
             <h2>Professional affiliations</h2>
-            <ul>
-                <li>Member of Law Review, Universidad San Francisco de Quito</li>
-                <li>Member of Foro de Abogados del Ecuador</li>
-            </ul>
-        </section>
+            <div>
+                <p>Member of Law Review, Universidad San Francisco de Quito</p>    
+                <img src="../assets/icons/logo-usfq-law-review.svg">            
+            </div>
+            <div>
+                <p>Member of Foro de Abogados del Ecuador</p>
+                <img src="../assets/images/foro-abogados-ecuador.jpeg">
+            </div>                         
+        </div>
 
         
         <!-- Contact section -->
-        <section class="contact">
+        <!-- <div class="contact">
             <h2>Contact</h2>
             <p>Feel free to reach out to me through the following contact channels:</p>
             <ul>
@@ -73,7 +113,7 @@
                 <li><strong>Address:</strong> Vancouver, Canadá</li>
                 <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/feed/">https://www.linkedin.com/feed/</a></li>
             </ul>
-        </section>
+        </div> -->
     </main>
 
     <!-- Footer -->

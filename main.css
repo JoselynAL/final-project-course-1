@@ -8,19 +8,17 @@
 
 /* General styles */
 body {
-    /* margin: 0; */
-    /* padding: 0; */
+    margin: auto;
+    padding: auto;
     /* background-color: var(--secondary-color); */
     color: var(--text-color);
     font-family: "Poppins", sans-serif;
     font-weight: 100;
-    padding: auto;
-    margin: auto;
 }
 
 /* Footer */
 footer {
-    background-color: #00204a;
+    background-color: var(--text-color);
     color: var(--secondary-color);
     text-align: center;
     padding: 20px;
@@ -41,8 +39,8 @@ footer {
     align-items: center;
     text-align: center;
     /* color: var(--secondary-color); */
-    margin-top: 20px;
-    margin: 20px;
+    padding: 40px;
+    margin: 40px;
 }
 
 /* Logo img */
@@ -88,7 +86,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    /* text-decoration: underline; */
     color: var(--text-color);
 }
 
@@ -110,15 +107,6 @@ nav ul li a:hover {
     text-align: center;
 } */
 
-.law-areas-home-page, .awards-home-page, .affiliations-home-page, .contacto-home-page {
-    background-color: white;
-    margin: 20px auto;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-}
-
 /* Home main styles */
 .home-main {
     text-align: center;
@@ -129,22 +117,51 @@ nav ul li a:hover {
 }
 
 .main-heading {
-    font-size: 60px;
+    font-size: 70px;
     color: var(--text-color);
     font-weight: normal;
+    height: 150px;
+    margin-top: 50px;
 }
 
-/* Areas */
+/* Areas
 h2.h2 {
     font-size: 30px;
     color: #555;
+} */
+
+/* About */
+.law-firm-about {
+    margin: auto;
+    padding: auto;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
 }
 
-/* Awars div */
+.about-h2 {
+    font-weight: normal;
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.about-p {
+    color: black;
+    font-size: 20px;
+}
+
+/* Awars */
 .image-carousel {
-    width: 80%;
+    width: 100%;
     max-width: 600px;
-    height: 100px;
+    height: 200px;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -152,25 +169,24 @@ h2.h2 {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     top: 30px;
+    align-items: center;
 }
 
+/* Awards */
 .carousel-track {
     display: flex;
-    width: 400%;
-    animation: slide 20s infinite ease-in-out;
-    gap: 30px;
-    
+    width: 300px;
+    animation: slide 10s infinite ease-in-out;
+    gap: 50px;
 }
 
 .carousel-track img {
-    width: auto;
-    height: auto;
+    width: 400px;
+    height: 180px;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
     display: block;
-    /* object-fit: cover; */
-    
 }
 
 @keyframes slide {
@@ -179,7 +195,6 @@ h2.h2 {
     55%, 75% { transform: translateX(-200%); }
     80%, 100% { transform: translateX(-300%); }
 }
-
 
 /* Law Areas Section
 .law-areas-home-page {
@@ -227,32 +242,32 @@ h2.h2 {
     object-fit: contain;
 } */
 
-.affiliations-home-page {
+/* .affiliations-home-page {
     background-color: #151f42;
     display: flex;
     justify-content: center;
     gap: 50px;
     align-items: center;
     flex-wrap: wrap;
-}
+} */
 
 /* .affiliations-home-page h2 {
     color: white;
     display: block;
 } */
 
-.affiliations-home-page ul {
+/* .affiliations-home-page ul {
     color: white;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
+} */
 
 /* Contact Form */
 .contact-home-page {
-    margin: 30px;
-    padding: 20px;
+    margin: 50px;
+    padding: 50px;
 }
 
 .h3-contact {
@@ -264,7 +279,6 @@ h2.h2 {
     flex-direction: column;
     gap: 10px;
     text-align: left;
-    
 }
 
 input[type="text"], input[type="email"] {
@@ -284,14 +298,13 @@ input[type="text"], input[type="email"] {
 }
 
 .btn-home:hover {
-    background-color: #0056b3;
+    background-color: #555;
 }
 
-
-/* TEAM PAGE */
+/************************** TEAM PAGE ****************************/
 /* Nav */
 .team nav {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -299,7 +312,7 @@ input[type="text"], input[type="email"] {
     justify-content: center;
     position:relative;
     z-index: 1000;
-    top: 0px
+    top: 40px
 }
 
 /* Profile */
@@ -307,94 +320,150 @@ input[type="text"], input[type="email"] {
     text-align: center;
     padding: 120px 20px 50px;
     background-color: white;
-    max-width: 800px;
+    /* max-width: 500px; */
     margin: 100px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid var(--primary-color);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* border: 2px solid var(--primary-color); */
     box-sizing: border-box;
+    height: 400px;
 }
 
 .profile-pic {
-    width: 280px;
-    height: 280px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--primary-color);
+    margin-top: -80px;
 }
 
-#profile h1 {
-    font-size: 35px;
-    color: var(--primary-color);
-    margin-top: 15px;
-}
-
-#profile h2 {
-    font-size: 22px;
-    color: #555;
+.h2-profile, .p-profile  {
     font-weight: normal;
-    margin-top: 10px;
+}
+
+.h2-profile {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.p-profile {
+    font-size: 1rem;
+    color: black;
 }
 
 /* Sections */
-section {
+/* section {
     padding: 50px;
     max-width: 900px;
     margin: 20px auto;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.joselyn-contact {
+    text-align: center;
+    margin: 10px 0;
 }
 
-h2 {
-    color: var(--primary-color);
-    text-align: center;
+.joselyn-contact ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+}
+
+.left,
+.right {
+    color: #555;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 350px;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+/* Biography */
+.biography {
+    margin: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2.h2 {
+    color: var(--text-color);
     margin-bottom: 20px;
     font-size: 29px;
 }
 
-.main ul {
+.h3.h3 {
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 23px;
+}
+
+.biography ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.main ul li {
-    font-size: 18px;
+.biography ul li {
+    font-size: 16px;
     padding: 12px;
     border-bottom: 1px solid #ddd;
-}
-
-/* Biography and education */
-.biography ul {
-    padding-left: 20px;
-}
-
-.biography ul li {
     text-align: center;
-    font-size: 16px;
 }
 
-/* Practice areas*/
-.areas-practice ul {
+/* Practice area */
+.practice-area {
+    width: 60%;
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    gap: 60px;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
 
-.areas-practice ul li {
-    background: var(--primary-color);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
+.practices-labels {
+    display: flex;
+    flex-direction: column;
 }
+
+.area {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    display: block;
+    background-color: #94e2da;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.info {
+    display: none;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #28757c;
+    margin-top: 5px;
+}
+
+input[type="checkbox"]:checked +label + .info {
+    display: block; 
+}
+
 
 /* professional affiliations */
 .affiliations {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
     background-color: white;
@@ -403,11 +472,26 @@ h2 {
     overflow: auto;
 }
 
-.affiliations li {
+.affiliations p {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: var(--secondary-color);
+    list-style: none;
+    display: flex;
+    width: 300px;
+}
+
+.affiliations div {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.affiliations img {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
 }
 
 /* Sección de contacto */
@@ -479,9 +563,10 @@ h2 {
 
 .law-areas-page h2 {
     text-align: center;
-    font-size: 32px;
-    color: var(--primary-color);
+    font-size: 35px;
+    color: var(--text-color);
     margin-bottom: 30px;
+    font-weight: normal;
 }
 
 .law-areas-page ul {
@@ -499,7 +584,7 @@ h2 {
     padding: 20px;
     font-size: 20px;
     font-weight: normal;
-    color: var(--primary-color);
+    color: #555;
     border-bottom: 1px solid #ddd;
 }
 
@@ -511,7 +596,7 @@ h2 {
     border: 2px solid var(--primary-color);
 }
 
-/* Alineación intercalada */
+/*************/
 .law-areas-page li:nth-child(odd) img {
     float: left;
     margin-right: 20px;
@@ -522,9 +607,63 @@ h2 {
     margin-left: 20px;
 }
 
-/* Clearfix para evitar colapsos */
 .law-areas-page li::after {
     content: "";
     display: table;
     clear: both;
+}
+
+
+/* RESPONSIVE */
+/* ✅ MOBILE (480px) */
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 40px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .profile-pic {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .contact-home-page {
+        margin: 20px; /* Reducir el margen en móviles */
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px; /* Reducir el espacio entre enlaces */
+    }
+}
+
+/* ✅ TABLET (481px-1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .main-heading {
+        font-size: 50px;
+    }
+
+    .home {
+        flex-direction: column; /* Asegurar que los elementos se apilen */
+        padding: 20px;
+    }
+
+    .law-areas.law-home {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* ✅ DESKTOP(>1024px) */
+@media (min-width: 1025px) {
+    .main-heading {
+        font-size: 70px;
+    }
+
+    .law-firm-about {
+        max-width: 80%;
+        margin: auto;
+    }
 }
