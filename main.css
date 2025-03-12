@@ -21,7 +21,7 @@ footer {
     background-color: var(--text-color);
     color: var(--secondary-color);
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
     margin-top: 0px;
     width: 100%;
     margin-bottom: 0;
@@ -210,6 +210,9 @@ h2.h2 {
     display: grid;
     flex-direction: column;
     gap: 10px;
+}
+
+.label-c {
     text-align: left;
 }
 
@@ -227,10 +230,13 @@ input[type="text"], input[type="email"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out, 
+    transform 0.2s;
 }
 
 .btn-home:hover {
     background-color: #555;
+    transform: scale(1.05);
 }
 
 /************************** TEAM PAGE ****************************/
@@ -307,8 +313,8 @@ input[type="text"], input[type="email"] {
 
 /* Biography */
 .biography {
-    margin: 30px;
-    padding: 10px;
+    margin: 60px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -447,7 +453,7 @@ input[type="checkbox"]:checked +label + .info {
 }
 
 
-/* AREAS PAGE */
+/****************************** AREAS PAGE **************************/
 /* Nav */
 .areas nav {
     /* background-color: var(--primary-color); */
@@ -490,7 +496,7 @@ input[type="checkbox"]:checked +label + .info {
     display: block;
     max-width: 900px;
     margin: 0 auto;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     padding: 40px;
     border-radius: 8px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
@@ -529,6 +535,14 @@ input[type="checkbox"]:checked +label + .info {
     object-fit: cover;
     border-radius: 5px;
     border: 2px solid var(--primary-color);
+}
+
+.flex-images-css {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 8px; 
+    object-fit: cover;
 }
 
 /* button */
