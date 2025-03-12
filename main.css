@@ -21,7 +21,7 @@ footer {
     background-color: var(--text-color);
     color: var(--secondary-color);
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
     margin-top: 0px;
     width: 100%;
     margin-bottom: 0;
@@ -535,6 +535,14 @@ input[type="checkbox"]:checked +label + .info {
     object-fit: cover;
     border-radius: 5px;
     border: 2px solid var(--primary-color);
+}
+
+.flex-images-css {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 8px; 
+    object-fit: cover;
 }
 
 /* button */
