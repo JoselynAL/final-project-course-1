@@ -117,7 +117,7 @@ nav ul li a:hover {
 }
 
 .main-heading {
-    font-size: 70px;
+    font-size: clamp(2rem, 5vw, 3rem);
     color: var(--text-color);
     font-weight: normal;
     height: 150px;
