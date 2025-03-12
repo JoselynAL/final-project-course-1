@@ -464,6 +464,7 @@ input[type="checkbox"]:checked +label + .info {
 
 /* professional affiliations */
 .affiliations {
+    /* position: absolute; */
     gap: 20px;
     padding: 20px;
     background-color: white;
@@ -473,25 +474,34 @@ input[type="checkbox"]:checked +label + .info {
 }
 
 .affiliations p {
-    padding: 15px;
+    position: absolute;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: var(--secondary-color);
     list-style: none;
     display: flex;
     width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .affiliations div {
     display: flex;
     gap: 60px;
     justify-content: center;
+    position: relative;
 }
 
 .affiliations img {
+    position: relative;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
     width: 80px;
     height: 80px;
     margin-top: 15px;
+    margin-right: 1200px;
 }
 
 /* Sección de contacto */
