@@ -196,74 +196,6 @@ h2.h2 {
     80%, 100% { transform: translateX(-300%); }
 }
 
-/* Law Areas Section
-.law-areas-home-page {
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: white;
-} */
-
-/* .law-areas-home-page h2 {
-    margin-right: 20px;
-    display: block;
-} */
-
-/* .law-areas-home-page ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    
-}
-
-.law-areas-home-page li {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px;
-    border-bottom: 1px solid var(--text-color);
-    text-decoration: none;
-} */
-
-/* Awards Section
-.awards-home-page {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: var(--secondary-color);
-}
-
-.awards img {
-    width: 250px;
-    height: 150px;
-    object-fit: contain;
-} */
-
-/* .affiliations-home-page {
-    background-color: #151f42;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-    flex-wrap: wrap;
-} */
-
-/* .affiliations-home-page h2 {
-    color: white;
-    display: block;
-} */
-
-/* .affiliations-home-page ul {
-    color: white;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-} */
-
 /* Contact Form */
 .contact-home-page {
     margin: 50px;
@@ -351,16 +283,6 @@ input[type="text"], input[type="email"] {
     font-size: 1rem;
     color: black;
 }
-
-/* Sections */
-/* section {
-    padding: 50px;
-    max-width: 900px;
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
 
 .joselyn-contact {
     text-align: center;
@@ -528,7 +450,7 @@ input[type="checkbox"]:checked +label + .info {
 /* AREAS PAGE */
 /* Nav */
 .areas nav {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -548,28 +470,30 @@ input[type="checkbox"]:checked +label + .info {
 
 .areas nav ul li {
     display: inline;
+    margin-top: 40px;
 }
 
 .areas nav ul li a {
-    color: white;
+    color: #555;
     text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
+    font-weight: normal;
+    padding: 10px;
+    
 }
 
 .areas nav ul li a:hover {
-    text-decoration: underline;
+    color: var(--text-color);
 }
 
 /* Section of law areas */
 .law-areas-page {
     display: block;
     max-width: 900px;
-    margin: 100px auto;
-    background-color: white;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .law-areas-page h2 {
@@ -606,6 +530,27 @@ input[type="checkbox"]:checked +label + .info {
     border-radius: 5px;
     border: 2px solid var(--primary-color);
 }
+
+/* button */
+.btn-scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    margin-bottom: 90px;
+}
+
+.btn-scroll-top:hover {
+    background-color: #555;
+}
+
 
 /*************/
 .law-areas-page li:nth-child(odd) img {
